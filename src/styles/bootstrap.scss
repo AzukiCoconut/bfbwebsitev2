@@ -1,0 +1,35 @@
+// Required functions import
+@import 'bootstrap/scss/functions';
+
+// Variable overrides
+$primary: #4F8CDA;
+$secondary: #5BC47A;
+$dark: #2E3A4F;
+$light: #F7F7F9;
+$warning: #FFDA6A;
+$font-family-base: 'Open Sans', "lato", "montserrat", sans-serif;
+$font-family-heading: 'Nunito', 'Quicksand', 'Poppins', sans-serif;
+
+// Required imports
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/root';  
+
+// Optional imports
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/nav';
+@import 'bootstrap/scss/navbar';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/carousel';
+
+// Optional helpers
+@import 'bootstrap/scss/helpers';
+
+// Optional utilities
+@import 'bootstrap/scss/utilities/api';
