@@ -11,11 +11,11 @@ $font-family-base: 'Open Sans', "lato", "montserrat", sans-serif;
 $font-family-heading: 'Nunito', 'Quicksand', 'Poppins', sans-serif;
 
 // Required imports
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/variables-dark';
-@import 'bootstrap/scss/maps';
-@import 'bootstrap/scss/mixins';
-@import 'bootstrap/scss/root';  
+@import 'bootstrap/scss/_variables';
+@import 'bootstrap/scss/_variables-dark';
+@import 'bootstrap/scss/_maps';
+@import 'bootstrap/scss/_mixins';
+@import 'bootstrap/scss/_root';  
 
 // Optional imports
 @import 'bootstrap/scss/utilities';

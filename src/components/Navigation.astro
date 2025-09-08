@@ -1,0 +1,32 @@
+---
+import { Navbar } from 'astro-bootstrap';
+import { Picture } from 'astro:assets';
+import Logo from '../images/Logo-reverse colors-transparent.png';
+import type { NavbarItemType } from 'astro-bootstrap';
+const items: NavbarItemType[] = [
+	{ text: 'Home', href: '/' },
+	{ text: 'Services', href: '/services' },
+	{ text: 'About', href: '/about' },
+	{ text: 'Blog', href: '/blog' },
+	{ text: 'Contact', href: '/contact' },
+];
+const id = 'navbar';
+---
+
+<Navbar class="navbar-expand bg-dark" data-bs-theme="dark">
+	<div class="container-fluid">
+		<a href="/" class="navbar-brand"
+			><Picture
+				src={Logo}
+				alt="BFB Logo"
+				width={200}
+				height={75}
+				pictureAttributes={{ style: 'background-color: transparent' }}
+			/></a
+		>
+		<Navbar.Toggler controls={id} />
+		<Navbar.Collapse {id}>
+			<Navbar.Items {items} class="me-auto mb-2 mb-lg-0" />
+		</Navbar.Collapse>
+	</div>
+</Navbar>
