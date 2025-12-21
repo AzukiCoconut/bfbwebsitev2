@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import '@fontsource-variable/montserrat';
+@import '@fontsource-variable/nunito';
+
+@theme {
+    /* Define default fonts */
+    --default-font-primary: 'Montserrat Variable', sans-serif;
+    --default-font-secondary: 'Nunito Variable', sans-serif;
+
+    /* Define default colors */
+    --color-primary: #4F8CDA; /* A shade of blue */
+    --color-secondary: #2E3A4F; /* A darker shade for contrast */
+    --color-accent: #5BC47A; /* A shade of green */
+    --color-lt-gray: #F7F7F9; /* Light gray for backgrounds */
+    --color-highlight: #FFDDA6; /* A soft yellow for highlights */
+}
+
+body {
+    font-family: var(--default-font-primary);
+    font-weight: 400;
+    background-color: var(--color-lt-gray);
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--default-font-secondary);
+    font-weight: 500;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}   
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}   
