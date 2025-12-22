@@ -21,7 +21,7 @@ body {
     background-color: var(--color-lt-gray);
     color: var(--color-secondary);
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,3 +49,7 @@ h4 {
 h5 {
     font-size: 1.25rem;
 }   
+
+.expanded {
+    display: unset;
+}
