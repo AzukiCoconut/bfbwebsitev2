@@ -1,4 +1,7 @@
-document.querySelector(".hamburger").addEventListener("click", () => {
-  document.querySelector(".header-info").classList.toggle("expanded");
-  document.querySelector(".hamburger").classList.toggle("is-active");
-});
+const navLinks = document.querySelector('.nav-links');
+const hamburger = document.querySelector('.hamburger');
+
+	hamburger.addEventListener('click', () => {
+		hamburger.classList.toggle('is-active');
+		navLinks.classList.toggle('w-full');
+	});
