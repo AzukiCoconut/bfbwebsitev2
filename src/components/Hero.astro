@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import HeroImage from '../assets/Images/mobile-575@2x.jpeg';
+---
+
+<section class="hero-banner flex flex-col lg:flex-row">
+	<div
+		class="flex relative flex-col justify-center lg:justify-start w-full lg:w-[50%] bg-primary lg:p-10"
+	>
+		<h1
+			class="w-full mx-auto px-10 pt-5 pb-10 h-min-0 text-white text-center lg:text-start"
+		>
+			Expert Bookkeeping and CFO Services
+		</h1>
+		<div
+			class="relative px-7.5 pb-7.5 pt-2.5 text-center text-white lg:text-start"
+		>
+			<p>
+				Welcome to The Big Friendly Bookkeeper, where your financial peace of
+				mind is our top priority. Led by CPA Matthew Tingley, a seasoned
+				QuickBooks Certified ProAdvisor, we provide a comprehensive range of
+				bookkeeping services tailored to meet the unique needs of your business.
+				From meticulous setup and cleanup of your books to reliable accounts
+				management, payroll processing, and expert tax preparation, we ensure
+				your finances are in expert hands. With over 20 years of experience,
+				Matt is here to help you navigate your financial landscape, allowing you
+				to focus on what you do best—growing your business.
+			</p>
+		</div>
+		<div class="text-center relative mb-10">
+			<a
+				href=""
+				class="btn text-primary bg-white inline-block w-auto items-center border-2 border-solid border-primary py-3 px-7.5 rounded-full font-semibold shadow-md hover:opacity-80"
+				>Request Your Free Consultation Today</a
+			>
+		</div>
+	</div>
+	<div class="w-full h-auto bg-transparent lg:w-[50%]">
+		<div
+			class="m-0 w-full max-w-full h-full max-h-full border-r-0 overflow-hidden"
+		>
+			<Image
+				src={HeroImage}
+				alt="Hero Image"
+				class="w-full h-full object-cover"
+			/>
+		</div>
+	</div>
+</section>
