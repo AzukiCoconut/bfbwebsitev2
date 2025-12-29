@@ -20,8 +20,12 @@ body {
   font-weight: 400;
   background-color: var(--color-lt-gray);
   color: var(--color-secondary);
-  margin: 0;
+  margin: auto;
   padding: 1rem;
+  max-width: 86rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -54,6 +58,3 @@ h5 {
   font-size: 1.25rem;
 }
 
-.expanded {
-  left: 50px;
-}

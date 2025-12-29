@@ -1,50 +1,44 @@
 ---
-
+import Social from './Social.astro';
 ---
 
-<div
-	class="header-info fixed top-25 left-full flex flex-col justify-between z-1 overflow-auto transition-all duration-200 ease-in-out"
-	style="width: calc(100% - 52px); height: calc(100% - 100px);"
+<nav
+	class="nav-links ease-in-out duration-500 bg-lt-gray lg:static fixed lg:min-h-fit lg:top-0 top-25 right-0 lg:w-auto w-0 overflow-x-hidden lg:flex flex lg:flex-row flex-col gap-8 items-end z-1"
 >
-	<div class="block absolute -top-25 left-0 width-25 height-25"></div>
-	<div
-		class="relative flex flex-col items-end text-right gap-x-1 gap-y-1 grow py-3 overflow-auto nav-links lg:flex lg:overflow-auto"
+	<ul
+		class="text-md font-semibold flex lg:flex-row flex-col lg:items-center lg:gap-6 gap-8 md:text-md px-8"
 	>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/">Home</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/services">Services</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/why-us">Why Us</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/our-work">Our Work</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/about">About Us</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/Reviews">Reviews</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/faq">FAQs</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/contact">Contact Us</a
-		>
-		<a
-			class="block text-right py-2.5 px-0 font-bold text-lg lg:text-center lg:font-normal"
-			href="/blog">Blog</a
-		>
-	</div>
-</div>
+		<li>
+			<a href="/" class="hover:text-primary">Home</a>
+		</li>
+		<li>
+			<a href="/" class="hover:text-primary">Services</a>
+		</li>
+		<li>
+			<a href="/#aboutus" class="hover:text-primary">About Us</a>
+		</li>
+		<li>
+			<a href="/#reviews" class="hover:text-primary">Reviews</a>
+		</li>
+		<li>
+			<a href="/#faqs" class="hover:text-primary">FAQs</a>
+		</li>
+		<li>
+			<a href="/#contact" class="hover:text-primary">Contact Us</a>
+		</li>
+		<li>
+			<a href="/blog" class="hover:text-primary">Blog</a>
+		</li>
+	</ul>
+
+	<button
+		class="text-white
+				px-5
+				mx-6
+				py-2
+				rounded-full
+				bg-primary hover:opacity-70 cursor-pointer"
+		>Contact Us</button
+	>
+	<Social />
+</nav>
