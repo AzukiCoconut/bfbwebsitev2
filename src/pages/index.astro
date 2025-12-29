@@ -1,5 +1,12 @@
 ---
 import Layout from '../layouts/layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+const pageTitle = 'Expert Bookkeeping and CFO Services in Saint John, NB';
+const pageDescription = 'Expert Bookkeeping and CFO Services in Saint John, NB';
 ---
 
-<Layout />
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero />
+	<Services />
+</Layout>
