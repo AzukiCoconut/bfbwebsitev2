@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import workImage1 from '../assets/Images/ourworkimage.jpeg';
+import workImage2 from '../assets/Images/ourworkimage2.jpeg';
+---
+
+<section class="ourwork">
+	<div class="w-full h-[70vh]">
+		<Image
+			src={workImage1}
+			alt="Our work Image"
+			class="object-center object-fill w-full h-full"
+		/>
+	</div>
+	<div class="bg-lt-gray">
+		<div class="pt-8.5 pb-10">
+			<div class="max-w-180 mx-auto px-7.5">
+				<h2
+					class="text-[24px]! text-center mb-5 font-bold lg:text-[38px]! lg:leading-[1.2]"
+				>
+					Transforming Finances, One Client at a Time
+				</h2>
+			</div>
+			<div class="max-w-180 mx-auto px-7.5 w-full mt-4.5">
+				<p class="leading-[1.7] lg:leading-[1.55] mb-0">
+					At The Big Friendly Bookkeeper, we pride ourselves on delivering
+					tailored bookkeeping and consulting services that empower our clients
+					to focus on their core business. With expert proficiency in QuickBooks
+					and over 20 years of industry experience, Matt Tingley, our dedicated
+					CPA and QuickBooks Certified ProAdvisor, has successfully transformed
+					the financial landscape for businesses in New Brunswick, and beyond.
+				</p>
+			</div>
+			<div
+				class="max-w-120 md:max-w-180 lg:max-w-275 mx-auto px-10 mt-4.5 w-full h-full"
+			>
+				<div class="grid items-start gap-3.5 grid-cols-1">
+					<div class="grid gap-3.5 grid-cols-1">
+						<Image
+							src={workImage2}
+							alt="Our work Image"
+							class="block w-full h-full"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

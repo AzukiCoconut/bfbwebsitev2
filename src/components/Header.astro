@@ -4,8 +4,12 @@ import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
 ---
 
-<header class="flex justify-between items-center mx-auto w-full mb-10">
-	<Logo />
-	<Hamburger />
-	<Navigation />
-</header>
+<div class="w-full bg-white sticky top-0 left-0 z-100 mb-4">
+	<header
+		class="flex justify-between items-center w-[92%] container-width mx-auto bg-white"
+	>
+		<Logo />
+		<Hamburger />
+		<Navigation />
+	</header>
+</div>
