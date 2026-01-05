@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+import AboutUs from '../assets/Images/AboutUsImage.jpeg';
+---
+
+<section
+	class="flex flex-wrap lg:flex-nowrap mx-auto bg-lt-gray container-width"
+>
+	<div class="shrink-0 flex flex-col justify-center w-full lg:w-[35%]">
+		<div
+			class="relative lg:p-20 lg:max-w- lg:flex lg:flex-col lg:justify-center"
+		>
+			<h2
+				class="w-full mx-auto px-10 pt-10 pb-5 min-h-0 text-[24px] leading-[1.2] text-center lg:text-[45px] lg:p-0 lg:m-0 lg:text-left font-bold"
+			>
+				Your Trusted Partner in Financial Clarity
+			</h2>
+			<div
+				class="px-7.5 pt-2.5 pb-7.5 text-center max-w-120 mx-auto lg:pt-8 lg:px-0 lg:pb-0 lg:text-left lg:mt-0 font-medium"
+			>
+				<p class="line-height-1.7">
+					At The Big Friendly Bookkeeper, we understand that managing your
+					finances can be overwhelming, which is why Matthew Tingley, a seasoned
+					CPA and QuickBooks Certified ProAdvisor, is here to simplify the
+					process. With over 20 years of experience in bookkeeping and
+					consulting, Matt is equipped to handle everything from setting up
+					QuickBooks and keeping your books organized, to managing accounts
+					payable, payroll, and offering tailored outsourced CFO services.
+					Located in Saint John, NB, we pride ourselves on providing friendly,
+					personalized service that brings clarity to your financial landscape,
+					helping you focus on what really matters—growing your business.
+				</p>
+			</div>
+			<div class="text-center max-w-120 mx-auto px-7.5 lg:p-0 lg:m-0">
+				<a
+					href=""
+					class="border-2 border-solid border-primary inline-block shadow-xl w-auto rounded-full cursor-pointer lg:mt-7 lg:mx-0 lg:mb-0 py-3.25 px-10 lg:px-6.25 text-[16px] bg-primary text-white font-semibold hover:opacity-80 mb-10 text-center"
+					>Discover How We Simplify Your Finances</a
+				>
+			</div>
+		</div>
+	</div>
+	<div class="w-full h-auto lg:w-[65%]">
+		<div
+			class="m-0 w-full max-w-full h-full max-h-full overflow-hidden lg:content-stretch"
+		>
+			<Image
+				src={AboutUs}
+				alt="About Us Image"
+				class="object-cover w-full h-full min-h-full lg:relative lg:z-1 lg:block"
+			/>
+		</div>
+	</div>
+</section>
