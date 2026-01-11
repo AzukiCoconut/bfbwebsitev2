@@ -13,6 +13,13 @@
   --color-accent: #5bc47a; /* A shade of green */
   --color-lt-gray: #f7f7f9; /* Light gray for backgrounds */
   --color-highlight: #ffdda6; /* A soft yellow for highlights */
+  
+  /* Custom property for scroll behavior */
+  --scroll-margin-top: 160px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,7 +30,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -38,6 +44,14 @@ h6 {
 
 .container-width {
   max-width: 1320px;
+}
+
+.openMenu {
+  transition-property: all;
+  transform-origin: left top;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-duration: 500ms;
 }
 
 

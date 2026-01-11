@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/Images/hero2.jpeg';
+---
+
+<section
+	class="expert px-0 bg-lt-gray xl:mb-0 xl:z-1 xl:pt-0 xl:relative md:mb-0"
+>
+	<div
+		class="hero-banner flex flex-wrap xl:flex-nowrap xl:min-h-100 xl:items-stretch h-auto!"
+	>
+		<div
+			class="details flex shrink-0 relative flex-col justify-center w-full xl:ps-7.5 xl:pe-14 xl:pt-14 xl:pb-17 items-start xl:w-[50%]"
+		>
+			<div class="xl:ps-0 xl:w-130">
+				<h2
+					class="my-0 mx-auto px-10 pt-10 pb-5 min-h-0 relative font-bold text-[25px]! xl:text-[45px]! xl:p-0 xl:m-0 xl:text-left leading-[1.2] text-center xl:w-full xl:min-h-0"
+				>
+					Expert Bookkeeping and CFO Services
+				</h2>
+			</div>
+			<div
+				class="relative pt-2.5 px-7.5 pb-7.5 text-center max-w-180 mx-auto xl:pt-8 xl:px-0 xl:pb-0 xl:text-left xl:mt-0 xl:mx-0"
+			>
+				<p
+					class="mb-0 leading-[1.7] m-0 p-0 font-medium text-[17px]! xl:text-[18px]! xl:leading-[1.55]! xl:text-left"
+				>
+					At The Big Friendly Bookkeeper, Matthew Tingley brings over 20 years
+					of expertise as a CPA and QuickBooks Certified ProAdvisor to help
+					local businesses thrive. Specializing in tailored bookkeeping, precise
+					tax preparation, and top-tier outsourced CFO services, Matt is
+					dedicated to simplifying your financial processes and ensuring your
+					business’s success. Trust in a professional who knows the ins and outs
+					of accounting while providing a friendly, approachable experience
+					right here in Saint John, NB.
+				</p>
+			</div>
+		</div>
+		<div class="img w-full h-auto xl:-order-1 xl:w-[50%] xl:h-auto">
+			<div
+				class="max-w-full w-full max-h-full h-full m-0 rounded-0 bg-transparent overflow-hidden xl:justify-end xl:ps-14 xl:pe-7.5 xl:flex xl:relative xl:items-center xl:pt-14 xl:pb-17"
+			>
+				<Image
+					src={heroImage}
+					alt="Expert Bookkeeping and CFO Services"
+					class="w-full h-auto min-h-full object-cover xl:w-130 xl:relative xl:z-1 xl:rounded-xl xl:block"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
