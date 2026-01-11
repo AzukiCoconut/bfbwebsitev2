@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/layout.astro';
+import Hero from '../../components/services/ServiceHero.astro';
+import serviceImage from '../../assets/Images/Service1.jpeg';
+
+const pageTitle = 'Comprehensive Bookkeeping Cleanup Services';
+const pageDescription =
+	'Professional Bookkeeping Cleanup Services to Restore Financial Accuracy and Clarity for Your Business.';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero
+		title="Simplify your financial chaos"
+		imageSrc="/src/assets/Images/Service1.jpeg"
+		altText="Bookkeeping Cleanup Service"
+		buttonText="Get Started with Your Cleanup Today!"
+	/>
+</Layout>
