@@ -3,14 +3,16 @@ import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
 interface Props {
-	altText: string;
-	title: string;
-	description?: string;
-	imageSrc: string;
-	buttonText: string;
+	altText: string,
+	title: string,
+	paragraph1?: string,
+	paragraph2?: string,
+	paragraph3?: string,
+	imageSrc: string,
+	buttonText: string,
 }
 
-const { altText, title, description, imageSrc, buttonText } = Astro.props;
+const { altText, title, paragraph1, paragraph2, paragraph3, imageSrc, buttonText } = Astro.props;
 const image = import.meta.glob<{ default: ImageMetadata }>(
 	'/src/assets/Images/*.{jpeg,jpg,png,gif}'
 );
@@ -62,18 +64,7 @@ const image = import.meta.glob<{ default: ImageMetadata }>(
 	</div>
 	<div id="description" class="mt-0 max-w-180 mx-auto px-7.5">
 		<p class="mb-2.5 leading-[1.7] m-0 p-0">
-			Navigating the world of bookkeeping can feel overwhelming, but with The
-			Big Friendly Bookkeeper, you can breathe easy. Our Comprehensive
-			Bookkeeping Cleanup service is tailored to pinpoint and rectify
-			discrepancies in your financial records. Imagine saving hours of
-			frustration and countless dollars in potential penalties by having your
-			accounts accurately organized.
-			<br /><br />
-			Our meticulous process not only streamlines your bookkeeping but also equips
-			you with an up-to-date financial snapshot—letting you focus on what really matters:
-			growing your business. With over 20 years of experience, we ensure that your
-			books are clean and compliant, giving you peace of mind and clarity in your
-			financial decisions.
+			{paragraph1}<br /><br />{paragraph2}<br /><br />{paragraph3}
 		</p>
 	</div>
 </section>
