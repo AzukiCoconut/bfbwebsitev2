@@ -1,0 +1,26 @@
+---
+import Subheading from '../Subheading.astro';
+import SectionDescription from '../SectionDescription.astro';
+
+interface Props {
+	title: string;
+	paragraph1?: string;
+	paragraph2?: string;
+	paragraph3?: string;
+	backgroundColor: string;
+}
+
+const { title, paragraph1, paragraph2, paragraph3, backgroundColor } =
+	Astro.props;
+---
+
+<section class={`bg-${backgroundColor} relative`}>
+	<div class="pt-8.5 pb-10 duration-200">
+		<Subheading title={title} />
+		<SectionDescription
+			paragraph1={paragraph1}
+			paragraph2={paragraph2}
+			paragraph3={paragraph3}
+		/>
+	</div>
+</section>

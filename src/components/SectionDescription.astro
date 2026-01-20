@@ -1,0 +1,16 @@
+---
+import ParagraphText from './ParagraphText.astro';
+interface Props {
+	paragraph1?: string;
+	paragraph2?: string;
+	paragraph3?: string;
+}
+
+const { paragraph1, paragraph2, paragraph3 } = Astro.props;
+---
+
+<div class="max-w-180 mx-auto px-7.5">
+	<ParagraphText paragraphText={paragraph1} />
+	<ParagraphText paragraphText={paragraph2} />
+	<ParagraphText paragraphText={paragraph3} />
+</div>
