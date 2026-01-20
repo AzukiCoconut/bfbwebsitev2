@@ -1,0 +1,23 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+	altText: string;
+	imageSrc: string;
+}
+
+const image = import.meta.glob<{ default: ImageMetadata }>(
+	'/src/assets/Images/*.{jpeg,jpg,png,gif}'
+);
+
+const { altText, imageSrc } = Astro.props;
+---
+
+<section id="service7Image" class="h-125 w-full relative bg-transparent!">
+	<Image
+		src={image[imageSrc]()}
+		alt={altText}
+		class="object-cover w-full h-full object-center"
+	/>
+</section>

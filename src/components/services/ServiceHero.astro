@@ -3,16 +3,24 @@ import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
 interface Props {
-	altText: string,
-	title: string,
-	paragraph1?: string,
-	paragraph2?: string,
-	paragraph3?: string,
-	imageSrc: string,
-	buttonText: string,
+	altText: string;
+	title: string;
+	paragraph1?: string;
+	paragraph2?: string;
+	paragraph3?: string;
+	imageSrc: string;
+	buttonText: string;
 }
 
-const { altText, title, paragraph1, paragraph2, paragraph3, imageSrc, buttonText } = Astro.props;
+const {
+	altText,
+	title,
+	paragraph1,
+	paragraph2,
+	paragraph3,
+	imageSrc,
+	buttonText,
+} = Astro.props;
 const image = import.meta.glob<{ default: ImageMetadata }>(
 	'/src/assets/Images/*.{jpeg,jpg,png,gif}'
 );
@@ -24,11 +32,11 @@ const image = import.meta.glob<{ default: ImageMetadata }>(
 >
 	<div
 		id="herobanner"
-		class="min-h-125 relative flex flex-col justify-center items-center py-11"
+		class="min-h-70 lg:min-h-125 relative flex flex-col justify-center items-center py-11"
 	>
-		<div id="headline" class="relative z-1 mt-0 max-w-180 mx-auto px-7.5">
+		<div id="headline" class="relative z-1 lg:mt-0 max-w-180 mx-auto px-7.5">
 			<h1
-				class="text-[58px]! mb-0 relative z-1 text-white leading-[1.05] text-center m-0 p-0"
+				class="text-[34px]! font-bold leading-[1.1] lg:text-[58px]! mb-0 relative z-1 text-white lg:leading-[1.05] text-center m-0 p-0"
 			>
 				{title}
 			</h1>
@@ -63,7 +71,9 @@ const image = import.meta.glob<{ default: ImageMetadata }>(
 		</a>
 	</div>
 	<div id="description" class="mt-0 max-w-180 mx-auto px-7.5">
-		<p class="mb-2.5 leading-[1.7] m-0 p-0">
+		<p
+			class="mb-2.5 leading-[1.7] m-0 p-0 font-medium lg:text-lg lg:leading-[1.55]"
+		>
 			{paragraph1}<br /><br />{paragraph2}<br /><br />{paragraph3}
 		</p>
 	</div>

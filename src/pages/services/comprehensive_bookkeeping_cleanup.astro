@@ -1,8 +1,10 @@
 ---
 import Layout from '../../layouts/layout.astro';
 import Hero from '../../components/services/ServiceHero.astro';
-import serviceImage from '../../assets/Images/Service1.jpeg';
-
+import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
+import FullWidthImage from '../../components/services/FullWidthImage.astro';
+import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
+import FAQSection from '../../components/services/FAQSection.astro';
 const pageTitle = 'Comprehensive Bookkeeping Cleanup Services';
 const pageDescription =
 	'Professional Bookkeeping Cleanup Services to Restore Financial Accuracy and Clarity for Your Business.';
@@ -17,4 +19,34 @@ const pageDescription =
 		paragraph1="Navigating the world of bookkeeping can feel overwhelming, but with The Big Friendly Bookkeeper, you can breathe easy. Our Comprehensive Bookkeeping Cleanup service is tailored to pinpoint and rectify discrepancies in your financial records. Imagine saving hours of frustration and countless dollars in potential penalties by having your accounts accurately organized."
 		paragraph2="Our meticulous process not only streamlines your bookkeeping but also equips you with an up-to-date financial snapshot—letting you focus on what really matters:growing your business. With over 20 years of experience, we ensure that your books are clean and compliant, giving you peace of mind and clarity in your financial decisions."
 	/>
+	<DescriptionNoPhoto
+		title="Let's Untangle Your Books Together"
+		paragraph1="At The Big Friendly Bookkeeper, we understand how overwhelming messy books can be. With over 20 years of hands-on experience in accounting and bookkeeping, I am committed to giving your financial records the attention they deserve. I take pride in ensuring every client's financial data is accurate and organized, allowing you to focus on what you do best—running your business."
+		paragraph2="One of the reasons my clients trust me for Comprehensive Bookkeeping Cleanup is my expertise in QuickBooks. As a QuickBooks Certified ProAdvisor, I am highly skilled at using this powerful tool to streamline your bookkeeping processes. I will not only clean up your historical data but also set up your accounts in a way that makes it easy to maintain moving forward. My approach is thorough and detail-oriented, ensuring that you receive reliable and meaningful financial insights."
+		paragraph3="When you choose me for your bookkeeping cleanup, you’re not just hiring a service; you’re gaining a partner. I am dedicated to creating a seamless experience that will help illuminate your financial picture, enabling you to make informed decisions with confidence. Together, we can transform your messy books into a clear and organized financial foundation."
+		backgroundColor="lt-gray"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service7.jpeg"
+		altText="Organized Financial Records"
+	/>
+	<DescriptionNoPhoto
+		title="Transform Your Financial Chaos into Clarity"
+		paragraph1="Are you struggling with disorganized accounts and financial confusion? The Big Friendly Bookkeeper offers Comprehensive Bookkeeping Cleanup to streamline your financial records, allowing you to focus on growing your business."
+		paragraph2="• Thorough review of your existing records • Correction of errors and discrepancies • Reconciliation of bank and credit card accounts • Organization of historical financial data • Comprehensive report on your financial status"
+		paragraph3="Experience peace of mind as we restore order to your bookkeeping, empowering you to make informed financial decisions with confidence."
+		backgroundColor="lt-gray"
+	/>
+	<SectionWithPhotos
+		title="Transform Your Financial Chaos into Clarity"
+		paragraph1="At The Big Friendly Bookkeeper in Saint John, NB, we specialize in Comprehensive Bookkeeping Cleanup, turning your disorderly financial records into structured, accessible information. With over 20 years of experience, we deliver precision and peace of mind to ensure your accounting processes run smoothly, allowing you to focus on growing your business."
+		alt1Text="Fixing your books"
+		image1Src="/src/assets/Images/Service1.jpeg"
+		alt2Text="Correcting errors"
+		image2Src="/src/assets/Images/Service7.jpeg"
+		alt3Text="Looking at invoices"
+		image3Src="/src/assets/Images/Service3.jpeg"
+		backgroundColor="white"
+	/>
+	<FAQSection />
 </Layout>
