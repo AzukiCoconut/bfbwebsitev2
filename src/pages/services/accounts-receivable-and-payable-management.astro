@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/layout.astro';
+import Hero from '../../components/services/ServiceHero.astro';
+import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
+import FullWidthImage from '../../components/services/FullWidthImage.astro';
+import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
+import FAQSectionAPAR from '../../components/services/FAQSectionAPAR.astro';
+const pageTitle = 'Receivable and Payable Management';
+const pageDescription = 'Streamline your cash flow in Saint John';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero
+		title="Streamline your cash flow"
+		imageSrc="/src/assets/Images/Service1.jpeg"
+		altText="Streamline your cash flow"
+		buttonText="Discover How Today!"
+		paragraph1="Businesses can't thrive on uncertainty—especially when it comes to cash flow. With The Big Friendly Bookkeeper's Accounts Receivable and Payable Management, you’ll see a transformation in your finances almost instantly. No more chasing overdue invoices or stressing over missed payments. We take the reins, ensuring your books are clean and your cash flow steady, so you can focus on what you do best: running your business."
+		paragraph2="Imagine the peace of mind that comes from knowing your finances are in expert hands. Our process is swift and effective, yielding results that positively impact your bottom line. Neglecting these essential services can lead to cash shortfalls and missed opportunities. You deserve a clear financial picture. Trust in our experience, and watch your business thrive."
+	/>
+	<DescriptionNoPhoto
+		title="Let Me Handle Your Finances, So You Can Focus on Your Passion"
+		paragraph1="Managing your accounts receivable and payable effectively is crucial for the health of your business, and I pride myself on delivering reliable results in this area. With over 20 years of experience in bookkeeping and accounting, I have honed a meticulous approach to financial management that ensures every dollar is accounted for and accessible when you need it."
+		paragraph2="I understand that timely invoicing and prompt payment processing can often make or break a business's cash flow. I work diligently to maintain clear communication with your clients and vendors, ensuring that payments are collected and due invoices are handled efficiently. My proven processes have helped many businesses stay on top of their finances, enhancing their operational efficiency and allowing them to thrive in their own markets."
+		paragraph3="By entrusting me with your accounts receivable and payable management, you gain peace of mind knowing that seasoned expertise backs your financial dealings. This lets you concentrate on what you do best—growing your business—while I ensure that your financial operations run smoothly and reliably."
+		backgroundColor="lt-gray"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service2.jpeg"
+		altText="Receive Cash and Paying Bills"
+	/>
+	<DescriptionNoPhoto
+		title="Simplify Your Finances: Accounts Receivable and Payable Management"
+		paragraph1="At The Big Friendly Bookkeeper, we take charge of your accounts payable and receivable, allowing you to focus on growing your business."
+		unorderedList="Streamlined invoicing processes to ensure timely payments;Comprehensive management of vendor bills and payments;Regular reconciliation of accounts to maintain financial accuracy;Customized reports to provide insights on cash flow;Proactive communication with clients and vendors to eliminate delays"
+		paragraph3="With our dedicated accounts management expertise, you can enjoy peace of mind knowing your finances are in capable hands, ensuring smoother operations and improved cash flow."
+		backgroundColor="lt-gray"
+	/>
+	<SectionWithPhotos
+		title="Streamlining Your Financial flow"
+		paragraph1="At The Big Friendly Bookkeeper, we specialize in meticulous Accounts Receivable and Payable Management tailored for businesses. Let us handle your financial processes with expertise, ensuring timely payments and accurate collection, so you can focus on what you do best – growing your business."
+		alt1Text="Fixing your books"
+		image1Src="/src/assets/Images/Service1.jpeg"
+		alt2Text="Correcting errors"
+		image2Src="/src/assets/Images/Service3.jpeg"
+		alt3Text="Looking at invoices"
+		image3Src="/src/assets/Images/Service2.jpeg"
+		backgroundColor="white"
+	/>
+	<FAQSectionAPAR
+		title="Streamline Your Finances with Expert Accounts Receivable and Payable Management: Your FAQs Answered"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service3.jpeg"
+		altText="Invoice Cleanup"
+	/>
+</Layout>

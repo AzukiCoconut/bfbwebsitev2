@@ -1,0 +1,164 @@
+---
+import Subheading from '../Subheading.astro';
+import { Image } from 'astro:assets';
+import Service1 from '../../assets/Images/Service3.jpeg';
+import Service2 from '../../assets/Images/Service8.jpeg';
+import Service3 from '../../assets/Images/Service4.jpeg';
+import Service4 from '../../assets/Images/Service1.jpeg';
+import Service5 from '../../assets/Images/Service6.jpeg';
+const { title } = Astro.props;
+---
+
+<section class="relative bg-lt-gray">
+	<div class="pt-10 pb-11.5 sm:pt-14 sm:pb-11.5">
+		<Subheading title={title} />
+		<div
+			class="max-w-180 xl:max-w-[92%] flex flex-col items-center my-0 mx-auto px-7.5"
+		>
+			<div
+				class="relative w-full mt-9.25 mb-1 sm:py-0 sm:px-7.5 sm:w-195 sm:max-w-195 sm:my-7.5 flex flex-col items-center justify-center"
+			>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service1}
+							alt="Fix  your books"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							What is included in your payroll processing service?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							Our payroll processing service includes calculating employee
+							wages, deducting taxes, and also managing benefits and deductions.
+							We ensure that all aspects of payroll are handled with accuracy
+							and compliance.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service2}
+							alt="Clean up"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							How often do you process payroll?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							We offer flexible payroll schedules, including weekly, bi-weekly,
+							and monthly options, to match your business needs and preferences.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service3}
+							alt="Help with QuickBooks"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							What happens if there is an error in payroll processing?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							We take pride in our accuracy, but if an error does occur, we
+							address it immediately to rectify any issues and ensure your
+							employees receive their correct pay without delays.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service4}
+							alt="Help with QuickBooks"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							Can you assist with tax compliance related to payroll?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							Absolutely! We handle all payroll tax calculations and filings,
+							ensuring that your business stays compliant with federal and
+							provincial tax regulations.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service5}
+							alt="Help with QuickBooks"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							How can I get started with your payroll processing services?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							Getting started is simple. Just contact us for an initial
+							consultation, and we will assess your payroll needs to provide a
+							tailored solution that fits your business.
+						</div>
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>

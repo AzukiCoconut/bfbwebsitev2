@@ -34,31 +34,41 @@ const {
 ---
 
 <section class={`bg-${backgroundColor} relative`}>
-	<div class="py-14">
+	<div class="pt-8.5 pb-10 lg:py-14">
 		<Subheading title={title} />
 		<SectionDescription paragraph1={paragraph1} />
-		<div class="mt-10 max-w-275 px-0 mx-auto lg:w-275">
+		<div
+			class="mt-4.5 w-full lg:mt-10 max-w-180 xl:max-w-275 px-7.5 lg:px-0 mx-auto lg:w-275"
+		>
 			<div class="relative p-0 w-full h-full">
-				<div class="grid items-start gap-x-3 grid-cols-3">
-					<div class="grid gap-y-3 grid-cols-1">
+				<div
+					class="grid items-start lg:gap-x-3 sm:gap-x-3.75 gap-y-3.75 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+				>
+					<div
+						class="grid gap-x-3.75 lg:gap-y-3 grid-cols-[minmax(0,1fr)] lg:grid-cols-1"
+					>
 						<Image
 							src={image[image1Src]()}
 							alt={alt1Text}
-							class="block w-full h-auto"
+							class="block w-full h-auto overflow-clip"
 						/>
 					</div>
-					<div class="grid gap-y-3 grid-cols-1">
+					<div
+						class="grid gap-x-3.75 lg:gap-y-3 grid-cols-[minmax(0,1fr)] lg:grid-cols-1"
+					>
 						<Image
 							src={image[image2Src]()}
 							alt={alt2Text}
-							class="block w-full h-auto"
+							class="block w-full h-auto overflow-clip"
 						/>
 					</div>
-					<div class="grid gap-y-3 grid-cols-1">
+					<div
+						class="grid gap-x-3.75 lg:gap-y-3 grid-cols-[minmax(0,1fr)] lg:grid-cols-1"
+					>
 						<Image
 							src={image[image3Src]()}
 							alt={alt3Text}
-							class="block w-full h-auto"
+							class="block w-full h-auto overflow-clip"
 						/>
 					</div>
 				</div>

@@ -14,10 +14,10 @@ const image = import.meta.glob<{ default: ImageMetadata }>(
 const { altText, imageSrc } = Astro.props;
 ---
 
-<section id="service7Image" class="h-125 w-full relative bg-transparent!">
+<section id="service7Image" class="lg:h-125 w-full relative bg-transparent!">
 	<Image
 		src={image[imageSrc]()}
 		alt={altText}
-		class="object-cover w-full h-full object-center"
+		class="object-cover w-full h-full object-center overflow-clip"
 	/>
 </section>

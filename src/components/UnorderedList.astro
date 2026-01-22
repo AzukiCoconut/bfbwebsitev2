@@ -1,0 +1,16 @@
+---
+import ListItem from '../components/ListItem.astro';
+const { unorderedList } = Astro.props;
+
+const list: string = unorderedList;
+let listItems: string[] = [];
+if (list !== undefined) {
+	listItems = list.split(';');
+}
+---
+
+<ul
+	class="ps-5 mb-2.5 leading-[1.7] font-medium lg:mb-3 lg:text-lg lg:leading-[1.55] list-disc"
+>
+	{listItems.map((item: string) => <ListItem item={item} />)}
+</ul>
