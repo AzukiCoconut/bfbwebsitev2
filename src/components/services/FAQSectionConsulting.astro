@@ -1,0 +1,173 @@
+---
+import Subheading from '../Subheading.astro';
+import { Image } from 'astro:assets';
+import Service1 from '../../assets/Images/Service1.jpeg';
+import Service2 from '../../assets/Images/Service3.jpeg';
+import Service3 from '../../assets/Images/Service2.jpeg';
+import Service4 from '../../assets/Images/Service4.jpeg';
+import Service5 from '../../assets/Images/whyusimage.jpeg';
+const { title } = Astro.props;
+---
+
+<section class="relative bg-lt-gray">
+	<div class="pt-10 pb-11.5 sm:pt-14 sm:pb-11.5">
+		<Subheading title={title} />
+		<div
+			class="max-w-180 xl:max-w-[92%] flex flex-col items-center my-0 mx-auto px-7.5"
+		>
+			<div
+				class="relative w-full mt-9.25 mb-1 sm:py-0 sm:px-7.5 sm:w-195 sm:max-w-195 sm:my-7.5 flex flex-col items-center justify-center"
+			>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service1}
+							alt="Fix  your books"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							What is tailored financial consulting?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							Tailored financial consulting is a personalized approach to
+							financial strategy that considers your unique business needs,
+							objectives, and challenges. We work together to develop a
+							customized plan that aligns with your vision for growth and
+							stability.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service2}
+							alt="Clean up"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							How can financial consulting benefit my business?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							Financial consulting can help you identify opportunities for
+							growth, optimize your financial processes, manage risks, and
+							ensure that your business remains sustainable in the long term. By
+							having a tailored financial plan, you are better equipped to make
+							informed decisions and achieve your goals.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service3}
+							alt="Help with QuickBooks"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							What does the consultation process entail?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							The consultation process begins with an in-depth discussion to
+							understand your current financial situation and goals. We then
+							analyze this information and collaborate with you to create a
+							strategic financial plan that is specifically designed for your
+							business.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service4}
+							alt="Help with QuickBooks"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							How long does a consulting engagement typically last?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							The duration of a consulting engagement can vary based on the
+							complexity of your needs and the scope of the project. We offer
+							flexible packages that can range from a one-time review to ongoing
+							support over several months or years, depending on what works best
+							for you.
+						</div>
+					</div>
+				</span>
+				<span
+					class="mt-5 mb-10 flex flex-col sm:flex-row items-center sm:items-start relative m-0 p-7.5 w-full text-left rounded-xl shadow-[2px_2px_14px_rgba(0,0,0,0.2)]"
+					><div
+						class="mb-5 shrink-0 sm:me-6.5 w-37.5 h-37.5 overflow-hidden rounded-xl"
+					>
+						<Image
+							src={Service5}
+							alt="Help with QuickBooks"
+							class="object-cover w-full h-full"
+						/>
+					</div>
+					<div
+						class="relative -top-1 items-center sm:items-start flex flex-col justify-center w-full h-full"
+					>
+						<div
+							class="text-[19px] sm:text-[22px]! mt-0 font-bold sm:font-medium text-center sm:text-left normal-case py-0 px-0"
+						>
+							Can you work with businesses of any size?
+						</div>
+						<div
+							class="px-0 py-0 text-center text-[16px]! leading-[1.7] sm:text-left sm:text-lg sm:leading-[1.55] mt-2.5"
+						>
+							Yes! We cater to businesses of all sizes, from startups to
+							established enterprises. Our tailored approach ensures that
+							regardless of your business size, we can develop a financial
+							strategy that fits your specific requirements and objectives.
+						</div>
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>

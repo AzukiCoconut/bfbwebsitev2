@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/layout.astro';
+import Hero from '../../components/services/ServiceHero.astro';
+import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
+import FullWidthImage from '../../components/services/FullWidthImage.astro';
+import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
+import FAQSectionConsulting from '../../components/services/FAQSectionConsulting.astro';
+const pageTitle = 'Tailored Financial Consulting';
+const pageDescription = 'Financial Confidence Starts Here in Saint John';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero
+		title="Financial Confidence Starts Here"
+		imageSrc="/src/assets/Images/Service5.jpeg"
+		altText="Financial Consulting"
+		buttonText="Get Started Today"
+		paragraph1="At The Big Friendly Bookkeeper, we know that tailored financial consulting is not just about crunching numbers. It’s about aligning your financial goals with clear strategies that deliver results. With over 20 years of experience, I guarantee a personalized approach that transforms your financial landscape, providing clarity where it’s most needed. Don't let disorganized accounts hold you back; the risk of navigating your finances without expert guidance can be substantial."
+		paragraph2="Join me in crafting a solid financial foundation that allows you to focus on what you do best—growing your business. Experience the peace of mind that comes from knowing your financial situation is handled by a professional committed to your success. Results can be seen in as little as a few weeks, paving the way for sustainable growth and financial peace."
+	/>
+	<DescriptionNoPhoto
+		title="Unlock Your Financial Potential with Us"
+		paragraph1="At The Big Friendly Bookkeeper, we pride ourselves on delivering tailored financial consulting services designed specifically for your business needs. With over 20 years of experience in the accounting field, I understand that each business faces its own unique challenges and opportunities."
+		paragraph2="What sets me apart in providing this service is my meticulous approach to using QuickBooks in conjunction with in-depth analysis of your financial data. By leveraging this powerful tool, I can provide insights that help in creating a strategic financial roadmap for your business."
+		paragraph3="I believe in developing a close partnership with my clients, ensuring that I’m not just a service provider but an integral part of your journey towards financial growth. Together, we will identify your goals and devise actionable strategies that foster sustainability and success."
+		backgroundColor="lt-gray"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/whyusimage.jpeg"
+		altText="Financial Consulting"
+	/>
+	<DescriptionNoPhoto
+		title="Unlock Your Business Potential with Tailored Financial Consulting"
+		paragraph1="At The Big Friendly Bookkeeper, we provide expert financial consulting that aligns with your unique business objectives, paving the way for growth and long-term success."
+		unorderedList="Comprehensive financial analysis and assessment;Customized budgeting and forecasting;Strategic cash flow management;Continuous support and advice on financial decisions;Performance tracking with regular check-ins"
+		paragraph3="Experience a significant boost in your financial health and business scalability with insights that drive results."
+		backgroundColor="lt-gray"
+	/>
+	<SectionWithPhotos
+		title="Transform Your Financial Future with Tailored Consulting"
+		paragraph1="At The Big Friendly Bookkeeper in Saint John, NB, we specialize in bespoke financial consulting designed to fit the unique needs of your business. Let us partner with you to craft strategies that not only catalyze meaningful growth but also ensure the sustainability of your financial health for years to come."
+		alt1Text="Transform your financial future"
+		image1Src="/src/assets/Images/Service5.jpeg"
+		alt2Text="Financial Consulting"
+		image2Src="/src/assets/Images/whyus3.jpeg"
+		alt3Text="Tailored Financial Consulting"
+		image3Src="/src/assets/Images/Service6.jpeg"
+		backgroundColor="white"
+	/>
+	<FAQSectionConsulting
+		title="Unlock Your Business Potential with Our Tailored Financial Consulting FAQs"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/whyus2.jpeg"
+		altText="Financial Consulting"
+	/>
+</Layout>
