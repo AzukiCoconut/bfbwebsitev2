@@ -4,7 +4,7 @@ import Hero from '../../components/services/ServiceHero.astro';
 import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
 import FullWidthImage from '../../components/services/FullWidthImage.astro';
 import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
-import FAQSection from '../../components/services/FAQSection.astro';
+import FAQSectionCBC from '../../components/services/FAQSectionCBC.astro';
 const pageTitle = 'Comprehensive Bookkeeping Cleanup Services';
 const pageDescription =
 	'Professional Bookkeeping Cleanup Services to Restore Financial Accuracy and Clarity for Your Business.';
@@ -33,7 +33,7 @@ const pageDescription =
 	<DescriptionNoPhoto
 		title="Transform Your Financial Chaos into Clarity"
 		paragraph1="Are you struggling with disorganized accounts and financial confusion? The Big Friendly Bookkeeper offers Comprehensive Bookkeeping Cleanup to streamline your financial records, allowing you to focus on growing your business."
-		paragraph2="• Thorough review of your existing records • Correction of errors and discrepancies • Reconciliation of bank and credit card accounts • Organization of historical financial data • Comprehensive report on your financial status"
+		unorderedList="Thorough review of your existing records;Correction of errors and discrepancies;Reconciliation of bank and credit card accounts;Organization of historical financial data;Comprehensive report on your financial status"
 		paragraph3="Experience peace of mind as we restore order to your bookkeeping, empowering you to make informed financial decisions with confidence."
 		backgroundColor="lt-gray"
 	/>
@@ -48,5 +48,11 @@ const pageDescription =
 		image3Src="/src/assets/Images/Service3.jpeg"
 		backgroundColor="white"
 	/>
-	<FAQSection />
+	<FAQSectionCBC
+		title="Transform Your Finances: Expert Support for Your Bookkeeping Cleanup Needs"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service3.jpeg"
+		altText="Invoice Cleanup"
+	/>
 </Layout>

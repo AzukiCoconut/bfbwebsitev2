@@ -7,11 +7,18 @@ interface Props {
 	paragraph1?: string;
 	paragraph2?: string;
 	paragraph3?: string;
+	unorderedList?: string;
 	backgroundColor: string;
 }
 
-const { title, paragraph1, paragraph2, paragraph3, backgroundColor } =
-	Astro.props;
+const {
+	title,
+	paragraph1,
+	paragraph2,
+	paragraph3,
+	unorderedList,
+	backgroundColor,
+} = Astro.props;
 ---
 
 <section class={`bg-${backgroundColor} relative`}>
@@ -20,6 +27,7 @@ const { title, paragraph1, paragraph2, paragraph3, backgroundColor } =
 		<SectionDescription
 			paragraph1={paragraph1}
 			paragraph2={paragraph2}
+			unorderedList={unorderedList}
 			paragraph3={paragraph3}
 		/>
 	</div>

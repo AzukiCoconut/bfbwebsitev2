@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/layout.astro';
+import Hero from '../../components/services/ServiceHero.astro';
+import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
+import FullWidthImage from '../../components/services/FullWidthImage.astro';
+import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
+import FAQSectionPayroll from '../../components/services/FAQSectionPayroll.astro';
+const pageTitle = 'Accurate Payroll Processing';
+const pageDescription =
+	"You've Never Seen Payroll Run This Smoothly in Saint John";
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero
+		title="You've Never Seen Payroll Run This Smoothly"
+		imageSrc="/src/assets/Images/Service3.jpeg"
+		altText="Smooth Payroll"
+		buttonText="Get Started with Reliable Payroll Processing"
+		paragraph1="Payroll processing shouldn’t be a headache. Without accurate payroll, you risk costly penalties, unhappy employees, and a mountain of stress. At The Big Friendly Bookkeeper, we ensure your payroll runs seamlessly every cycle, so you can focus on growing your business instead of worrying about numbers. We pride ourselves on our quality guarantee. Count on us for precise calculations and timely payments, ensuring your team feels valued and secure."
+		paragraph2="What sets us apart? Our personalized approach. With over 20 years of accounting experience, I bring a wealth of knowledge to every calculation, allowing you to breathe easier knowing your payroll is in expert hands. You’ll not only save time but also experience peace of mind with our dedicated support. Contact us today to see how our comprehensive payroll solutions can transform your business life."
+	/>
+	<DescriptionNoPhoto
+		title="Experience Peace of Mind with Accurate Payroll Processing"
+		paragraph1="At The Big Friendly Bookkeeper, we pride ourselves on delivering unparalleled payroll processing services tailored to the needs of your business. I know just how critical it is for your employees to receive their pay accurately and on schedule, and that’s precisely what I guarantee. My extensive experience in accounting, combined with my QuickBooks Certified ProAdvisor status, means I leverage industry best practices to ensure every detail is meticulously handled."
+		paragraph2="One of the key tools I utilize in achieving consistent, reliable payroll results is the latest version of QuickBooks Payroll. This sophisticated software not only streamlines the entire process but also guarantees compliance with all tax regulations, ensuring that you can focus on running your business while I take care of your payroll needs."
+		paragraph3="With over 20 years of experience in the field, I have the expertise to not just meet but exceed your expectations. When it comes to payroll processing, I have developed a reputation for accuracy and reliability that my clients come to trust. You can rest assured knowing that your payroll is in the hands of a caring professional dedicated to your success. Let's work together to ensure your employees are happy and your business runs smoothly."
+		backgroundColor="lt-gray"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service8.jpeg"
+		altText="Accurate Payroll"
+	/>
+	<DescriptionNoPhoto
+		title="Experience the Ease of Accurate Payroll Processing"
+		paragraph1="At The Big Friendly Bookkeeper, we understand that your employees' satisfaction relies on timely and precise payroll processing."
+		unorderedList="Complete payroll setup and configuration;Accurate calculation of wages, deductions, and taxes;Management of employee benefits and entitlements;Compliance with federal, provincial, and local tax regulations;Direct deposit or check printing options"
+		paragraph3="With our expertise, you can focus on growing your business while we ensure your team gets paid right, every time."
+		backgroundColor="lt-gray"
+	/>
+	<SectionWithPhotos
+		title="Reliable Payroll Processing"
+		paragraph1="At The Big Friendly Bookkeeper, we understand that timely payroll processing is crucial for your business. With our accurate and dependable payroll services, you can focus on growing your Saint John operations while we ensure your employees get paid correctly and on time every cycle."
+		alt1Text="Accurate Payroll"
+		image1Src="/src/assets/Images/Service8.jpeg"
+		alt2Text="Smooth Payroll"
+		image2Src="/src/assets/Images/Service3.jpeg"
+		alt3Text="Easy Payroll"
+		image3Src="/src/assets/Images/Service6.jpeg"
+		backgroundColor="white"
+	/>
+	<FAQSectionPayroll
+		title="Mastering Payroll Precision: Your Top Questions Answered for Timely Employee Payments"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service4.jpeg"
+		altText="Mastering Payroll Precision"
+	/>
+</Layout>

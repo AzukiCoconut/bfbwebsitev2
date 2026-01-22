@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/layout.astro';
+import Hero from '../../components/services/ServiceHero.astro';
+import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
+import FullWidthImage from '../../components/services/FullWidthImage.astro';
+import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
+import FAQSectionTax from '../../components/services/FAQSectionTax.astro';
+const pageTitle = 'Tax Preparation';
+const pageDescription = 'A stress-free tax season in Saint John';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero
+		title="A stress-free tax season"
+		imageSrc="/src/assets/Images/Service6.jpeg"
+		altText="Stress-free Tax Season"
+		buttonText="Get Started Today"
+		paragraph1="Tax preparation isn’t just about crunching numbers; it’s about securing your financial future. At The Big Friendly Bookkeeper, we craft strategies that minimize your tax liability while maximizing your savings. Our clients find peace of mind, knowing they won’t be caught off guard come tax time. With over 20 years of experience in the field, we take the guesswork out of tax season, ensuring you enjoy results before the deadline hits."
+		paragraph2="Whether you're a busy entrepreneur or a growing business, our tailored services save you time and money. We do the heavy lifting, so you can focus on what really matters—growing your business. We’re here to provide clarity in a complex world, guiding you every step of the way toward tax efficiency and financial health."
+	/>
+	<DescriptionNoPhoto
+		title="Stress Less This Tax Season with My Expertise"
+		paragraph1="At The Big Friendly Bookkeeper, I pride myself on my deep understanding of tax preparation and strategy honed over 20 years in the industry. I know how to navigate the complexities of tax laws to ensure you are maximizing your refunds while minimizing any hassle during this busy time of year."
+		paragraph2="With my experience as a CPA and QuickBooks Certified ProAdvisor, I utilize advanced software tools and resources that streamline the tax preparation process. I carefully analyze your financial situation to identify opportunities for deductions and credits that others might overlook."
+		paragraph3="You can trust that I will provide reliable results. My dedication to getting every detail right means you can rest easy knowing your taxes are in good hands, allowing you to focus on what truly matters to you."
+		backgroundColor="lt-gray"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service4.jpeg"
+		altText="Tax Preparation"
+	/>
+	<DescriptionNoPhoto
+		title="Maximize Your Returns with Expert Tax Preparation"
+		paragraph1="At The Big Friendly Bookkeeper, we ensure that your tax preparation is seamless, allowing you to receive the maximum refunds while reducing the stress that often comes with tax season."
+		unorderedList=" Comprehensive tax return preparation for individuals and businesses;Strategic tax planning to optimize your financial position;In-depth analysis to identify deductions and credits you qualify for;Filing support and IRS communication, if needed;Year-round tax advice to keep you informed and compliant"
+		paragraph3="With our expert guidance, you can look forward to a more profitable tax season and peace of mind."
+		backgroundColor="lt-gray"
+	/>
+	<SectionWithPhotos
+		title="Expert Tax Preparation Services."
+		paragraph1="At The Big Friendly Bookkeeper, we specialize in Tax Preparation and Strategy tailored to your unique financial situation. With over 20 years of experience, Matt Tingley will ensure you maximize your refunds while alleviating the stress of tax season in Saint John, NB, giving you peace of mind to focus on what matters most."
+		alt1Text="Tax Preparation"
+		image1Src="/src/assets/Images/Service4.jpeg"
+		alt2Text="Expert Tax Preparation Services"
+		image2Src="/src/assets/Images/Service6.jpeg"
+		alt3Text="Stress-free tax season"
+		image3Src="/src/assets/Images/Service8.jpeg"
+		backgroundColor="white"
+	/>
+	<FAQSectionTax
+		title="Maximize Your Tax Refunds: Your Top Questions Answered About Our Tax Preparation and Strategy Services"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service8.jpeg"
+		altText="Maximize Your Tax Refunds"
+	/>
+</Layout>
