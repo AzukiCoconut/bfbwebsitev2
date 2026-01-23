@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/layout.astro';
+import Subheading from '../components/Subheading.astro';
+import SectionDescription from '../components/SectionDescription.astro';
+import { Image } from 'astro:assets';
+import Logo from '../assets/Images/SocialMediaLogo.png';
+const pageTitle = 'The Big Friendly Bookkeeper Blog';
+const pageDescription = 'Your source of financial information in Saint John';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<section class="flex flex-col items-center my-10">
+		<Image
+			src={Logo}
+			alt="Service 1"
+			class="w-37.5 h-37.5 object-cover my-10"
+		/>
+		<Subheading title="Our blog will be arriving soon..." />
+		<SectionDescription
+			paragraph1="The Big Friendly Bookkeeper’s blog is coming soon! We’re excited to create a space where Canadian business owners can find practical bookkeeping advice, tax tips, and approachable insights to make managing your finances easier. Whether you’re curious about payroll, compliance, or ways to streamline your accounting, our upcoming posts will break down the details in a clear, friendly way. Stay tuned—your trusted source for reliable bookkeeping guidance is almost here!"
+		/>
+	</section>
+</Layout>
