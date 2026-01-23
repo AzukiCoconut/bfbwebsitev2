@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/layout.astro';
+import Hero from '../../components/services/ServiceHero.astro';
+import DescriptionNoPhoto from '../../components/services/DescriptionNoPhoto.astro';
+import FullWidthImage from '../../components/services/FullWidthImage.astro';
+import SectionWithPhotos from '../../components/services/SectionWithPhotos.astro';
+import FAQSectionPartnerhip from '../../components/services/FAQSectionPartnerhip.astro';
+import FAQSectionTax from '../../components/services/FAQSectionTax.astro';
+const pageTitle = 'Trusted Financial Partnership';
+const pageDescription =
+	'Experience financial clarity and peace of mind in Saint John';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<Hero
+		title="Experience financial clarity and peace of mind."
+		imageSrc="/src/assets/Images/Service1.jpeg"
+		altText="Financial Clarity"
+		buttonText="Let's connect Today!"
+		paragraph1="Navigating the world of finance can feel overwhelming, but with The Big Friendly Bookkeeper, you gain a trusted financial partner dedicated to your success. Our Trusted Financial Partnership service streamlines your bookkeeping processes, allowing you to focus on what truly matters—growing your business. Experience less stress and more control as we tackle everything from tax preparation to managing your accounts payable and receivable. With over 20 years of expertise, we promise quick results that simplify your financial landscape and save you valuable time and money."
+		paragraph2="Not only do we tackle the numbers, but we also pride ourselves on our commitment to clear communication and personalized solutions. While others may leave you guessing, we ensure you're informed every step of the way. Choosing our services means choosing peace of mind, knowing your accounts are in capable hands, so you can concentrate on achieving your goals."
+	/>
+	<DescriptionNoPhoto
+		title="Let's Build Your Financial Future Together"
+		paragraph1="At The Big Friendly Bookkeeper, we pride ourselves on being a trusted financial partnership for all our clients. With over 20 years of experience, I understand the intricacies of managing your financial health, and I’m dedicated to building a strong, lasting relationship with you. My goal is to provide reliable support that you can count on, every step of the way."
+		paragraph2="What sets me apart in fostering this partnership is my expertise as a QuickBooks Certified ProAdvisor. I not only set up the software to fit your unique needs, but I ensure that it becomes a powerful tool in tracking and managing your accounts. This empowers you with real-time data and insights that can guide your business decisions. Together, we’ll navigate your financial landscape with confidence, knowing you have a partner who truly understands your needs and is committed to your success."
+		backgroundColor="lt-gray"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/Service6.jpeg"
+		altText="Financial Partnerhip"
+	/>
+	<DescriptionNoPhoto
+		title="Your Trusted Financial Partnership"
+		paragraph1="At The Big Friendly Bookkeeper, we understand that building lasting relationships based on trust is essential to your financial success."
+		unorderedList="Personalized financial consultations to align with your business goals;Comprehensive bookkeeping tailored to your unique needs;Expert tax preparation ensuring compliance and maximized returns;Ongoing financial analysis to keep you informed and strategic;Dedicated support for accounts receivable and payable management"
+		paragraph3="The outcome? A solid financial foundation that empowers you to focus on growing your business with confidence."
+		backgroundColor="lt-gray"
+	/>
+	<SectionWithPhotos
+		title="Trusted Financial Partnership: Your Local Financial Allies"
+		paragraph1="At The Big Friendly Bookkeeper, we understand that a trustworthy financial partnership is essential for your business's success. Based in Saint John, NB, we are dedicated to providing reliable support and expert guidance tailored to your unique financial needs, ensuring peace of mind as you focus on growing your business."
+		alt1Text="Financial Clarity"
+		image1Src="/src/assets/Images/Service1.jpeg"
+		alt2Text="Reach your goals"
+		image2Src="/src/assets/Images/Service6.jpeg"
+		alt3Text="Financial Partnership"
+		image3Src="/src/assets/Images/whyus3.jpeg"
+		backgroundColor="white"
+	/>
+	<FAQSectionPartnerhip
+		title="Unlock Your Financial Peace of Mind with Our Trusted Financial Partnership FAQs"
+	/>
+	<FullWidthImage
+		imageSrc="/src/assets/Images/whyus3.jpeg"
+		altText="Trusted Partnership"
+	/>
+</Layout>

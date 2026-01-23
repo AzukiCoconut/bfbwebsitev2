@@ -17,7 +17,7 @@ interface Props {
 }
 
 const image = import.meta.glob<{ default: ImageMetadata }>(
-	'/src/assets/Images/*.{jpeg,jpg,png,gif}'
+	'/src/assets/Images/*.{jpeg,jpg,png,gif}',
 );
 
 const {
@@ -50,7 +50,7 @@ const {
 						<Image
 							src={image[image1Src]()}
 							alt={alt1Text}
-							class="block w-full h-auto overflow-clip"
+							class="object-cover w-full h-full overflow-clip"
 						/>
 					</div>
 					<div
@@ -59,7 +59,7 @@ const {
 						<Image
 							src={image[image2Src]()}
 							alt={alt2Text}
-							class="block w-full h-auto overflow-clip"
+							class="object-stretch"
 						/>
 					</div>
 					<div
@@ -68,7 +68,7 @@ const {
 						<Image
 							src={image[image3Src]()}
 							alt={alt3Text}
-							class="block w-full h-auto overflow-clip"
+							class="object-cover w-full h-full"
 						/>
 					</div>
 				</div>
