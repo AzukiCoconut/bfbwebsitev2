@@ -20,6 +20,23 @@ const { pageTitle, pageDescription } = Astro.props;
 
 			gtag('config', 'GT-KD2WRV6T');
 		</script>
+		<!-- Event snippet for Book appointment (3) conversion page
+			In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+		<script>
+			function gtag_report_conversion(url) {
+				var callback = function () {
+					if (typeof url != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+					send_to: 'AW-17739399026/5gkHCOP4x_wbEPL-5opC',
+					event_callback: callback,
+				});
+				return false;
+			}
+		</script>
+
 		<title>{pageTitle}</title>
 		<script
 			type="module"
