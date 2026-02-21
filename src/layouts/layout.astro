@@ -8,36 +8,14 @@ const { pageTitle, pageDescription } = Astro.props;
 
 <html lang="en">
 	<head>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NFGJ6KDLBZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NFGJ6KDLBZ');
-</script>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="generator" content={Astro.generator} />
-		
+		<title>{pageTitle}</title>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
 		></script>
-		<!-- Event snippet for Book appointment (2) conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-17739399026/zlkLCPSPmvwbEPL-5opC'});
-</script>
-		<title>{pageTitle}</title>
 		<meta name="description" content={pageDescription} />
 	</head>
 	<body>
-		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHP6ZFSV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 		<Header />
 		<slot />
 		<Contact />
