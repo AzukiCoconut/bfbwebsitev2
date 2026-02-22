@@ -55,7 +55,13 @@ const { pageTitle, pageDescription } = Astro.props;
 				phone_conversion_number: '506-285-2325',
 			});
 		</script>
-
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			emailjs.init('co0X1iA1ZH8WOpS-W');
+		</script>
 		<title>{pageTitle}</title>
 		<script
 			type="module"
