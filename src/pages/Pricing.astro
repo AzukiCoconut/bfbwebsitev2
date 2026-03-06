@@ -14,16 +14,16 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 <Layout pageTitle={pageTitle} pageDescription={pageDescription}>
 	<main>
 		<!-- HERO -->
-		<section class="bg-slate-50 border-b">
-			<div class="mx-auto max-w-7xl px-6 py-16 lg:py-20 max-h-70 lg:max-h-125">
-				<div class="relative z-1 max-w-180 mx-auto">
+		<section class="pricingHero bg-slate-50 border-b">
+			<div class="mx-auto max-w-3xl px-6 py-16 lg:py-20 max-h-125">
+				<div class="mx-auto">
 					<p class="text-sm font-semibold tracking-wide text-primary uppercase">
 						Sample Pricing
 					</p>
-					<h1 class="mt-2 text-4xl/tight font-extrabold text-white sm:text-5xl">
+					<h1 class="mt-2 text-2xl/tight font-extrabold text-white lg:text-5xl">
 						Transparent pricing, tailored for your business
 					</h1>
-					<p class="mt-4 text-lg text-white">
+					<p class="mt-4 text-sm text-white lg:text-lg">
 						Every business is unique, but clarity shouldn't be. Below are
 						sample, fixed-fee packages to help you estimate cost. Final
 						proposals are custom and reflect volume, systems, and reporting
@@ -44,17 +44,9 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 						</a>
 					</div>
 				</div>
-				<div
-					class="max-w-none me-0 absolute top-0 left-0 rounded-none w-full h-125 z-0 my-0 mx-auto overflow-hidden bg-secondary"
-				>
-					<Image
-						src={Service1}
-						alt="Pricing Hero Image"
-						class="object-cover w-full h-full opacity-60"
-					/>
-				</div>
 			</div>
-
+			
+		</section>
 			<!-- VALUE STRIP (keeps voice consistent with homepage) -->
 			<section class="bg-white">
 				<div
@@ -75,7 +67,7 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 					<div class="rounded-2xl border p-6">
 						<h3 class="font-semibold text-slate-900">CPA Expertise</h3>
 						<p class="mt-2 text-sm text-slate-600">
-							Led by a CPA & QuickBooks Certified ProAdvisor—accurate, compliant
+							Led by a CPA & QuickBooks Certified ProAdvisor-accurate, compliant
 							books.
 						</p>
 					</div>
@@ -105,9 +97,9 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 					<div class="mt-10 grid gap-6 lg:grid-cols-3">
 						<PricingCard
 							title="Starter"
-							price="From $450/mo"
+							price="From $350/mo"
 							blurb="For solo founders and very small teams."
-							ctaHref="/contact"
+							ctaHref="/Booking"
 							features={[
 								'Monthly bookkeeping (up to ~100 txns, 2 accounts)',
 								'Bank & credit card reconciliations',
@@ -119,9 +111,9 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 
 						<PricingCard
 							title="Growing"
-							price="From $850/mo"
+							price="From $750/mo"
 							blurb="For established small businesses."
-							ctaHref="/contact"
+							ctaHref="/Booking"
 							featured
 							features={[
 								'Monthly bookkeeping (up to ~300 txns, 4-5 accounts)',
@@ -134,9 +126,9 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 
 						<PricingCard
 							title="Operations+"
-							price="From $1,500/mo"
+							price="From $1,400/mo"
 							blurb="For higher volume or advanced needs."
-							ctaHref="/contact"
+							ctaHref="/Booking"
 							features={[
 								'Weekly coding & reconciliations',
 								'AR/AP workflows (weekly)',
@@ -246,7 +238,6 @@ const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
 					</div>
 				</div>
 			</section>
-		</section>
 	</main>
 	<!-- JSON-LD for SEO -->
 	<script type="application/ld+json">
