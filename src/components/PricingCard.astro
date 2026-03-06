@@ -1,0 +1,68 @@
+---
+const {
+	title = 'Package',
+	price = 'From $0/mo',
+	blurb = '',
+	features = [],
+	notes = '',
+	ctaHref = '/contact',
+	featured = false,
+} = Astro.props;
+---
+
+<article
+	class={`relative rounded-2xl border bg-white ${featured ? 'ring-2 ring-primary border-primary-80' : ''} p-6 flex flex-col`}
+	aria-label={`${title} pricing card`}
+>
+	{
+		featured && (
+			<span class="absolute -top-3 left-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">
+				Most popular
+			</span>
+		)
+	}
+
+	<header>
+		<h3 class="text-xl font-bold text-slate-900">{title}</h3>
+		<p class="mt-1 text-slate-600">{blurb}</p>
+		<p class="mt-4 text-3xl font-extrabold text-slate-900">{price}</p>
+	</header>
+
+	<ul class="mt-6 space-y-2 text-sm text-slate-700">
+		{
+			features.map((f) => (
+				<li class="flex items-start gap-2">
+					<svg
+						class="mt-0.5 h-5 w-5 text-emerald-600"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+						aria-hidden="true"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M16.704 5.29a1 1 0 010 1.414l-7.2 7.2a1 1 0 01-1.414 0l-3.2-3.2a1 1 0 011.414-1.414l2.493 2.493 6.493-6.493a1 1 0 011.414 0z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<span>{f}</span>
+				</li>
+			))
+		}
+	</ul>
+
+	{notes && <p class="mt-4 text-xs text-slate-500">{notes}</p>}
+
+	<div class="mt-6">
+		<a
+			href={ctaHref}
+			class={`inline-flex w-full items-center justify-center rounded-md px-4 py-2 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+				featured
+					? 'bg-primary text-white hover:opacity-70 focus:ring-primary'
+					: 'border border-slate-300 text-slate-700 hover:bg-white focus:ring-slate-300'
+			}`}
+			aria-label={`Contact to discuss ${title} package`}
+		>
+			Get a Custom Quote
+		</a>
+	</div>
+</article>
