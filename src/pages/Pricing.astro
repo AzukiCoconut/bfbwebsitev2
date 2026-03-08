@@ -1,0 +1,279 @@
+---
+import PricingCard from '../components/PricingCard.astro';
+import Layout from '../layouts/layout.astro';
+import { Image } from 'astro:assets';
+import Service1 from '../assets/Images/Service1.jpeg';
+
+// SEO meta
+const pageTitle = 'Pricing | The Big Friendly Bookkeeper';
+const pageDescription =
+	'Transparent, sample pricing for bookkeeping, payroll, cleanup, and fractional CFO support—tailored for Canadian small businesses.';
+const url = 'https://www.bigfriendlybookkeeper.ca/pricing';
+---
+
+<Layout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<main>
+		<!-- HERO -->
+		<section class="pricingHero bg-slate-50 border-b">
+			<div class="mx-auto max-w-3xl px-6 py-16 lg:py-20 max-h-125">
+				<div class="mx-auto">
+					<p class="text-sm font-semibold tracking-wide text-primary uppercase">
+						Sample Pricing
+					</p>
+					<h1 class="mt-2 text-2xl/tight font-extrabold text-white lg:text-5xl">
+						Transparent pricing, tailored for your business
+					</h1>
+					<p class="mt-4 text-sm text-white lg:text-lg">
+						Every business is unique, but clarity shouldn't be. Below are
+						sample, fixed-fee packages to help you estimate cost. Final
+						proposals are custom and reflect volume, systems, and reporting
+						needs.
+					</p>
+					<div class="mt-6 flex flex-wrap gap-3">
+						<a
+							href="/Booking"
+							class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-white font-semibold hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2"
+						>
+							Request a Custom Quote
+						</a>
+						<a
+							href="/#services"
+							class="inline-flex items-center justify-center rounded-full border border-primary px-5 py-3 font-semibold text-slate-700 bg-white hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2"
+						>
+							Explore Services
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+			<!-- VALUE STRIP (keeps voice consistent with homepage) -->
+			<section class="bg-white">
+				<div
+					class="mx-auto max-w-7xl px-6 py-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 z-1"
+				>
+					<div class="rounded-2xl border p-6">
+						<h3 class="font-semibold text-slate-900">Fixed Fees</h3>
+						<p class="mt-2 text-sm text-slate-600">
+							Flat, predictable pricing with clearly defined scope.
+						</p>
+					</div>
+					<div class="rounded-2xl border p-6">
+						<h3 class="font-semibold text-slate-900">Tailored Scope</h3>
+						<p class="mt-2 text-sm text-slate-600">
+							Packages adjust to your systems, volume, and reporting.
+						</p>
+					</div>
+					<div class="rounded-2xl border p-6">
+						<h3 class="font-semibold text-slate-900">CPA Expertise</h3>
+						<p class="mt-2 text-sm text-slate-600">
+							Led by a CPA & QuickBooks Certified ProAdvisor-accurate, compliant
+							books.
+						</p>
+					</div>
+					<div class="rounded-2xl border p-6">
+						<h3 class="font-semibold text-slate-900">Friendly Support</h3>
+						<p class="mt-2 text-sm text-slate-600">
+							Clear communication, reliable turnaround, zero jargon.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- PRICING GRID -->
+			<section class="bg-slate-50">
+				<div class="mx-auto max-w-7xl px-6 py-16">
+					<div class="max-w-3xl">
+						<h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">
+							Sample packages
+						</h2>
+						<p class="mt-3 text-slate-600">
+							These tiers illustrate typical scopes. Your quote will match your
+							transaction volume, account count, payroll complexity, and
+							reporting requirements.
+						</p>
+					</div>
+
+					<div class="mt-10 grid gap-6 lg:grid-cols-3">
+						<PricingCard
+							title="Starter"
+							price="From $350/mo"
+							blurb="For solo founders and very small teams."
+							ctaHref="/Booking"
+							features={[
+								'Monthly bookkeeping (up to ~100 txns, 2 accounts)',
+								'Bank & credit card reconciliations',
+								'Monthly financial statements',
+								'Year-end package for tax preparer',
+							]}
+							notes="Add payroll or AR/AP as needed."
+						/>
+
+						<PricingCard
+							title="Growing"
+							price="From $750/mo"
+							blurb="For established small businesses."
+							ctaHref="/Booking"
+							featured
+							features={[
+								'Monthly bookkeeping (up to ~300 txns, 4-5 accounts)',
+								'Monthly financials + KPI snapshot',
+								'Quarterly review call',
+								'Receivables & payables light support',
+							]}
+							notes="Best fit for multi-account setups and moderate volume."
+						/>
+
+						<PricingCard
+							title="Operations+"
+							price="From $1,400/mo"
+							blurb="For higher volume or advanced needs."
+							ctaHref="/Booking"
+							features={[
+								'Weekly coding & reconciliations',
+								'AR/AP workflows (weekly)',
+								'Payroll coordination',
+								'Advanced reporting / class tracking',
+							]}
+							notes="Custom scope for inventory, multi-entity, or consolidations."
+						/>
+					</div>
+
+					<!-- Add-ons -->
+					<div class="mt-14">
+						<h3 class="text-xl font-semibold text-slate-900">
+							Popular add-ons
+						</h3>
+						<ul class="mt-3 grid gap-3 sm:grid-cols-2">
+							<li class="rounded-xl border bg-white p-4">
+								<p class="font-medium text-slate-900">Cleanup Project</p>
+								<p class="text-sm text-slate-600">
+									One-time historical catch-up and file modernization.
+								</p>
+							</li>
+							<li class="rounded-xl border bg-white p-4">
+								<p class="font-medium text-slate-900">Payroll Processing</p>
+								<p class="text-sm text-slate-600">
+									Timely and accurate payroll coordination.
+								</p>
+							</li>
+							<li class="rounded-xl border bg-white p-4">
+								<p class="font-medium text-slate-900">Tax Preparation</p>
+								<p class="text-sm text-slate-600">
+									Seamless year-end with proactive planning.
+								</p>
+							</li>
+							<li class="rounded-xl border bg-white p-4">
+								<p class="font-medium text-slate-900">Fractional CFO</p>
+								<p class="text-sm text-slate-600">
+									Budgeting, cash flow, and decision support.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ (aligns with your existing “FAQs” nav section) -->
+			<section class="bg-white">
+				<div class="mx-auto max-w-7xl px-6 py-16">
+					<div class="max-w-3xl">
+						<h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">
+							Pricing FAQs
+						</h2>
+						<dl class="mt-8 space-y-6">
+							<div class="rounded-2xl border p-6">
+								<dt class="font-semibold text-slate-900">
+									Are these prices final?
+								</dt>
+								<dd class="mt-2 text-slate-600">
+									They're starting points. We'll confirm scope (transactions,
+									accounts, payroll, AR/AP, reporting) and propose a fixed
+									monthly fee.
+								</dd>
+							</div>
+							<div class="rounded-2xl border p-6">
+								<dt class="font-semibold text-slate-900">
+									Do you offer hourly billing?
+								</dt>
+								<dd class="mt-2 text-slate-600">
+									We primarily quote fixed-fee engagements for predictability.
+									One-time cleanup may be fixed-fee by project.
+								</dd>
+							</div>
+							<div class="rounded-2xl border p-6">
+								<dt class="font-semibold text-slate-900">
+									Can I add or remove services later?
+								</dt>
+								<dd class="mt-2 text-slate-600">
+									Absolutely. As your business evolves, we adjust the scope so
+									you only pay for what you need.
+								</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-lt-gray">
+				<div class="mx-auto max-w-7xl px-6 py-16 text-slate-600">
+					<div
+						class="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between"
+					>
+						<div>
+							<h2 class="text-3xl font-bold">
+								Ready for friendly, reliable bookkeeping?
+							</h2>
+							<p class="mt-2 text-slate-500">
+								Book a quick call and get a customized, fixed-fee proposal.
+							</p>
+						</div>
+						<a
+							href="/Booking"
+							class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 font-semibold border-primary border text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+						>
+							Request Your Quote
+						</a>
+					</div>
+				</div>
+			</section>
+	</main>
+	<!-- JSON-LD for SEO -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Bookkeeping & CFO Services - Pricing",
+			"provider": {
+				"@type": "LocalBusiness",
+				"name": "The Big Friendly Bookkeeper"
+			},
+			"areaServed": "CA",
+			"url": "https://www.bigfriendlybookkeeper.ca/pricing",
+			"offers": [
+				{
+					"@type": "Offer",
+					"name": "Starter",
+					"price": "450",
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock"
+				},
+				{
+					"@type": "Offer",
+					"name": "Growing",
+					"price": "850",
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock"
+				},
+				{
+					"@type": "Offer",
+					"name": "Operations+",
+					"price": "1500",
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock"
+				}
+			]
+		}
+	</script>
+</Layout>
